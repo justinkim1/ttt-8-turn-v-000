@@ -28,5 +28,6 @@ def turn(user_input)
   puts "Please enter 1-9:"
   user_input = gets.strip
   input_to_index(user_input)
-  valid_move?()
+  if valid_move?(user_input)
+    turn
 end
