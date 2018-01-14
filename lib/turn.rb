@@ -29,6 +29,6 @@ def turn(user_input)
   user_input = gets.strip
   input_to_index(user_input)
   if !valid_move?(user_input)
-    turn
+    true
   end
 end
